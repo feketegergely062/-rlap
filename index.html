@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlapok</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Önéletrajz készítő</h1>
+    <form id="urlap" method="get" action="">
+        <label for="name">Név</label><br>
+        <input type="text" name="name"  placeholder="Írd ide a neved">
+        
+        <br><label for="eletkor">Életkor</label>
+        <input type="number" name="eletkor" id="eletkor" min="18" max="40">
+
+        <br><label for="szulido">Születési idő</label>
+        <input type="date" name="szulido" id="szulido" min="1920-01-01" max="2023-02-17">
+
+        <select name="vegzettseg">
+            <option value="programozo">Programozó</option>
+            <option value="pek">Pék</option>
+            <option value="gazszerelo">Gázszerelő</option>
+
+        </select>
+
+        <p>Melyik városokban vállalnál munkát?</p>
+        <label for="varos1">Budapest</label>
+        <input type="checkbox" name="varos1" id="varos1" value="Budapest">
+        <label for="varos2">Szeged</label>
+        <input type="checkbox" name="varos2" id="varos2" value="Szeged" checked>
+        <label for="varos3">London</label>
+        <input type="checkbox" name="varos3" id="varos3" value="London">
+
+
+        <p>Milyen program nyelvbe vagy a legerősebb?</p>
+
+        <label for="js">JavaScript</label>
+        <input type="radio" name="prnyelv" value="JavaScript" id="js" checked>
+        <label for="js">Java</label>
+        <input type="radio" name="prnyelv" value="java" id="java">
+        <label for="js">c++</label>
+        <input type="radio" name="prnyelv" value="c++" id="c++" >
+        
+        
+
+
+        <input type="submit" name="submit" value="Elküld">
+        <button name="masikSubmit" value="Gomb2">Elküld2</button>
+
+        
+    </form>
+
+    <div id="massage"></div>
+    
+    
+</body>
+</html>
